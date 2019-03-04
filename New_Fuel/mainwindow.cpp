@@ -19,7 +19,7 @@ MainWindow::MainWindow(QWidget *parent) :
 {
     ui->setupUi(this);
     my_db = QSqlDatabase::addDatabase("QSQLITE");
-    my_db.setDatabaseName("C:/Users/kamil/Desktop/Samochody/cars.db");
+    my_db.setDatabaseName("cars.db");
     selecting_counter=0;
     Which_Petrol="None";
     mgbox = new QMessageBox(parent);
